@@ -24,7 +24,7 @@ func (m *Monitor) Now() (int, error) {
 			if err != nil {
 				return counter, err
 			}
-			m.Path[path] = newHash
+			m.Paths[path] = newHash
 			counter++
 		}
 	}
